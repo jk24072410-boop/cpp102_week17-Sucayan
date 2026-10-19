@@ -1,6 +1,6 @@
 # cpp102_week17-Sucayan
 Simulated Device Monitoring and Alert System
-Student Name: Aivan James D. Sotto Student Number: 2601288 Section: 1CpE-C
+Student Name: John Kierby Sucayan Student Number: 2601304 Section: 1CpE-C
 
 Project Description
 This program monitors simulated device temperature readings. It stores the readings in a list, accepts new valid readings, and classifies each one as NORMAL, WARNING, or CRITICAL. It also prints a numerical summary and an overall monitoring status. It was written for CPP102 Week 17 using only Python 3 built-in features.
@@ -36,9 +36,17 @@ Test Cases
 I performed 13 tests (the 10 required tests plus 3 extra). 13 passed and 0 failed. Full details are in test_cases.md.
 
 Known Limitations
-Readings are lost when the program closes, because nothing is saved to a file.
-Readings can only be added, not edited or deleted.
-The 0 to 100 range and the 30 and 35 limits are for this classroom simulation only. They are not real device-safety standards.
+Readings are not saved to a file, so all data is lost when the program closes.
+
+Readings can only be added; editing and deleting existing readings are not supported.
+
+The 0–100 range and the limits of 30 and 35 are intended only for this classroom simulation. They do not represent actual device-safety standards.
+
 Reflection
-In this project I combined lists, loops, selection, and functions into one complete program for the first time. Splitting the work into small functions, with main() controlling the menu loop, made the program easier to understand and test than my earlier single-purpose exercises. The part I found hardest was the input validation order, the boundary tests TC06 and TC07. I tested it with specific values until I understood why it worked. If I continued this project, I would save the readings to a file.
+In this project, I combined lists, loops, selection statements, and functions to create a complete program for the first time. Dividing the program into smaller functions, with main() controlling the menu loop, made the code easier to understand, organize, and test compared to my earlier single-purpose exercises.
+
+The most challenging part was implementing the correct order of input validation, particularly when testing the boundary cases TC06 and TC07. By trying specific input values, I gradually understood how the validation process worked and why the order of the checks was important.
+
+If I were to continue developing this project, I would add a file-saving feature so that readings could be stored and retrieved even after the program closes. This would make the program more practical and improve its overall functionality.
+
 
